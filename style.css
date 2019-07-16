@@ -1,12 +1,18 @@
 html {
   box-sizing: border-box;
-  background: #ffc600;
+  background: purple url('https://picsum.photos/id/122/4147/2756') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: 'helvetica neue';
   font-size: 20px;
   font-weight: 200;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -57,12 +63,12 @@ input.search {
 
 .suggestions li:nth-child(even) {
   transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
-  background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
 }
 
 .suggestions li:nth-child(odd) {
   transform: perspective(100px) rotateX(-3deg) translateY(3px);
-  background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+  background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
 }
 
 span.population {
